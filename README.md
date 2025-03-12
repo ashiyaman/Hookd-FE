@@ -1,11 +1,11 @@
 # 📱 Hookd - Your One-Stop Mobile Accessories Shop  
 
-Welcome to **Hookd**, the ultimate mobile accessories shopping app. From trendy phone cases to high-quality chargers, headphones, and more — Hookd keeps you stylishly connected and fully equipped.  
+Welcome to **Hookd**, the ultimate electronic accessories shopping app. From trendy phone cases to high-quality chargers, headphones, and more — Hookd keeps you stylishly connected and fully equipped.  
 
 ## 🚀 Features  
 
 - 🌟 **Wide Range of Accessories**  
-  Browse and shop from a diverse collection of mobile accessories, including cases, chargers, earphones, screen protectors, and more.  
+  Browse and shop from a diverse collection of accessories, including cases, power banks, chargers, earphones, screen protectors, and more.  
 
 - 🔍 **Smart Search & Filters**  
   Easily find exactly what you need with intelligent search and filter options.  
