@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Header from "./components/Header"
 import Landing from "./pages/landing/Landing"
 import Products from "./pages/Products"
+import Accessories from './features/accessories/Accessories'
 import Cart from "./pages/Cart"
 
 const App = () => {
@@ -15,7 +16,8 @@ const App = () => {
             <Header />
             <Routes>
                 <Route path='/' element={<Landing />}/>
-                <Route path='/products' element={<Products />}/>
+                <Route path='/categoryAccessories' element={<Accessories />}/>
+                <Route path='/accessories' element={<Accessories />}/>
                 <Route path='/cart' element={<Cart />}/>
             </Routes>
         </Router>

@@ -1,22 +1,22 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import { fetchCategories, fetchCategoryById } from './landingSlice'
-import { fetchAccessories } from '../../features/accessories/accessorySlice'
 
 const Landing = () => {
     const dispatch = useDispatch()
-    const {categories, selctedCategory, status, error} = useSelector(state => state.categories)
+    const navigate = useNavigate()
+    const {categories} = useSelector(state => state.categories)
 
     useEffect(() => {
         dispatch(fetchCategories())
     }, [])    
 
     const categoryClickHandler = (categoryId) => {
-        console.log('...here...', categoryId)
         dispatch(fetchCategoryById(categoryId))
-        selctedCategory && dispatch(fetchAccessories)
+            .then(() => navigate('/categoryAccessories')
+            )
     }
 
    return ( 

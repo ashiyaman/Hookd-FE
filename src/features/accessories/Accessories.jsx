@@ -1,10 +1,14 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchAccessories } from '../features/accessories/accessorySlice'
+import { fetchAccessories } from './accessorySlice'
 
-const Landing = () => {
+const Accessories = () => {
     const dispatch = useDispatch()
+    
+    const {selectedCategory} = useSelector(state => state.category)
     const {accessories, status, error} = useSelector(state => state.accessories)
+
+    console.log('in accessories', selectedCategory)
 
     useEffect(() => {
         dispatch(fetchAccessories())
@@ -33,4 +37,4 @@ const Landing = () => {
     )
 }
 
-export default Landing
+export default Accessories

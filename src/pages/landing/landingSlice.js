@@ -1,12 +1,13 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const ACCESSORIES_URI = 'http://localhost:3000'
+const HOOKD_URI = 'http://localhost:3000'
 
 export const fetchCategories = createAsyncThunk(
     'categories/fetch',
     async() => {
-        const response = await axios.get(`${ACCESSORIES_URI}/categories`)
+        const response = await axios.get(`${HOOKD_URI}/categories`)
+        console.log(response)
         if(response){
             return response.data
         }
@@ -16,7 +17,7 @@ export const fetchCategories = createAsyncThunk(
 export const fetchCategoryById = createAsyncThunk(
     'categories/fetchCategoryById',
     async(categoryId) => {
-        const response = await axios.get(`${ACCESSORIES_URI}/categories/${categoryId}`)
+        const response = await axios.get(`${HOOKD_URI}/categories/${categoryId}`)
         if(response){
             return response.data
         }
